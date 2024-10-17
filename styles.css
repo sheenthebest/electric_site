@@ -113,8 +113,8 @@ nav ul li a:hover::after {
     border-radius: 10px;
     margin-top: 30px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 .hero::before {
@@ -128,7 +128,7 @@ nav ul li a:hover::after {
                 radial-gradient(circle, rgba(233,69,96,0.1) 10%, transparent 10%);
     background-position: 0 0, 50px 50px;
     background-size: 100px 100px;
-    opacity: 0.3;
+    opacity: 0.9;
     animation: backgroundMove 10s linear infinite;
 }
 
