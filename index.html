@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Martin Psota - Profesionální elektrikářské služby s více než 10 lety zkušeností v Praze a okolí.">
+    <meta name="keywords" content="elektrikář, Praha, elektroinstalace, bezpečnostní systémy, LED osvětlení">
+    <meta name="author" content="Martin Psota">
+    <title>Martin Psota - Elektrikář</title>
+    <!-- <link rel="icon" type="image/jpg" href="images/logo.jpg"> -->
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo"></div>
+                <ul class="animate-on-scroll zoom-in delay-2">
+                    <li><a href="#uvod">Úvod</a></li>
+                    <li><a href="#sluzby">Služby</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+                <div class="contact-phone animate-on-scroll zoom-in delay-2">
+                    <i class="fas fa-phone"></i> +420 123 456 789
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="uvod" class="hero">
+                <div class="hero-content">
+                    <h1 class="animate-on-scroll fade-in-up delay-1">Martin Psota</h1>
+                    <h2 class="animate-on-scroll fade-in-up delay-2">Elektrikář OSVČ</h2>
+                    <p class="animate-on-scroll fade-in-up delay-3">Profesionální elektrikářské služby s více než 10 lety zkušeností</p>
+                    <div class="hero-features animate-on-scroll fade-in-up delay-4">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Kvalitní práce</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Rychlé řešení</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Bezpečnost především</span>
+                        </div>
+                    </div>
+                    <a href="#kontakt" class="cta-button animate-on-scroll fade-in-up delay-4">Kontaktujte mě</a>
+                </div>
+                <div class="hero-image animate-on-scroll zoom-in delay-5">
+                    <img src="images/person.jpg" alt="Martin Psota" class="profile-image">
+                </div>
+            </section>
+
+            <div id="sluzby" class="section section animate-on-scroll fade-in-up">
+                <h2 class="section-title animate-on-scroll fade-in-down">Moje služby</h2>
+                <div class="services-container animate-on-scroll zoom-in delay-1">
+                    <div class="services-group">
+                        <i class="fas fa-bolt service-icon"></i>
+                        <h3>Elektroinstalace</h3>
+                        <ul>
+                            <li>Silnoproudé a slaboproudé instalace</li>
+                            <li>Staveništní rozvody</li>
+                            <li>Veřejné osvětlení</li>
+                            <!-- <li>Kompletace a úpravy rozvaděčů včetně distribuce</li> -->
+                        </ul>
+                    </div>
+                    <div class="services-group">
+                        <i class="fas fa-shield-alt service-icon"></i>
+                        <h3>Bezpečnostní systémy</h3>
+                        <ul>
+                            <li>Hromosvody a uzemnění</li>
+                            <li>Zabezpečovací systémy Jablotron</li>
+                            <li>Kamerové systémy Hikvision</li>
+                        </ul>
+                    </div>
+                    <div class="services-group">
+                        <i class="fas fa-tools service-icon"></i>
+                        <h3>Specializované služby</h3>
+                        <ul>
+                            <li>IT infrastruktura a kompletace racků</li>
+                            <li>Kompletace a úpravy rozvaděčů</li>
+                            <li>Montáž LED osvětlení a pásků</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="section section animate-on-scroll fade-in-up delay-1">
+                <h2 class="section-title animate-on-scroll fade-in-down">Portfolio</h2>
+                <div class="gallery animate-on-scroll zoom-in delay-1">
+                    <div v-for="(image, index) in displayedImages" :key="index" class="gallery-item" @click="openGallery(index)">
+                        <img :src="image" :alt="'Ukázka práce ' + (index + 1)">
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontakt" class="section section animate-on-scroll fade-in-up delay-1">
+                <h2 class="section-title animate-on-scroll fade-in-down">Kontakt</h2>
+                <div class="contact-container">
+                    <div class="contact-info animate-on-scroll fade-in-up delay-1">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@martinpsota.cz</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+420 123 456 789</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Praha, Česká republika</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-id-card"></i>
+                            <p>IČO: 14438836</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links animate-on-scroll fade-in-up delay-2">
+                        <a href="https://cz.linkedin.com/in/martin-psota-296b55204" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer animate-on-scroll fade-in-up delay-1">
+                <div class="container">
+                    <p>&copy; {{ currentYear }} Martin Psota. Všechna práva vyhrazena.</p>
+                </div>
+            </footer>
+        </main>
+
+        <div v-if="showGalleryModal" class="gallery-modal" @click="closeGallery">
+            <div class="gallery-modal-content" @click.stop>
+                <img :src="galleryImages[currentImageIndex]" :alt="'Ukázka práce ' + (currentImageIndex + 1)">
+                <button class="gallery-nav prev" @click="prevImage"><i class="fas fa-chevron-left"></i></button>
+                <button class="gallery-nav next" @click="nextImage"><i class="fas fa-chevron-right"></i></button>
+                <button class="gallery-close" @click="closeGallery"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
