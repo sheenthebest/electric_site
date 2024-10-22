@@ -192,61 +192,40 @@ section {
     position: relative;
     z-index: 1;
 }
-.profile-image {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 3px solid #ff3333;
-    object-fit: cover;
-    transition: all 0.3s ease;
-    position: relative;
-}
-.profile-image::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: linear-gradient(45deg, #ff002b, #a5001b);
-    border-radius: 50%;
-    z-index: -1;
-    opacity: 0.7;
-    transition: all 0.3s ease;
-}
-.profile-image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    border-radius: 50%;
-    z-index: 1;
-    transition: all 0.3s ease;
-}
 .hero-image:hover .profile-image {
     transform: scale(1.05) rotate(3deg);
 }
-.hero-image:hover .profile-image::before {
-    opacity: 1;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
-    filter: blur(10px);
-}
-.hero-image:hover .profile-image::after {
-    opacity: 0.9;
-}
-@keyframes glowing {
-    0% { box-shadow: 0 0 5px #ff002b; }
-    50% { box-shadow: 0 0 20px #ff002b; }
-    100% { box-shadow: 0 0 5px #ff002b; }
-}
 .hero-image:hover .profile-image {
-    animation: glowing 2s infinite;
+    transform: scale(1.05) rotate(2deg) translateY(-5px);
+    filter: brightness(1.1) contrast(1.15);
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.3),
+        0 5px 15px rgba(255, 51, 51, 0.1);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 8px solid #1a1a2e;
+    outline: 2px solid #000000;
+    outline-offset: 4px;
+    /* transform: rotate(-2deg); */
+    padding: 3px;
+    background: linear-gradient(45deg, 
+        rgba(255, 51, 51, 0.3), 
+        rgba(26, 26, 46, 0.3), 
+        rgba(255, 51, 51, 0.3)
+    );
+    background-size: 200% 200%;
+    animation: gradientBorder 5s ease infinite;
+}
+@keyframes gradientBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .hero-features {
