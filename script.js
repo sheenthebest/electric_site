@@ -4,7 +4,7 @@ new Vue({
         totalImages: 25,
         showGalleryModal: false,
         currentImageIndex: 0,
-        currentYear: new Date().getFullYear(),
+        currentYear: new Date().getFullYear()
     },
     computed: {
         galleryImages() {

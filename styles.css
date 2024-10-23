@@ -248,8 +248,9 @@ nav {
     }
 
     .contact-phone {
-        padding: 6px 10px;
+        padding: 6px 20px;
         font-size: 0.85em;
+        margin-right: 80px;
     }
 }
 
