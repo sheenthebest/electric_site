@@ -4,7 +4,7 @@ new Vue({
         totalImages: 25,
         showGalleryModal: false,
         currentImageIndex: 0,
-        currentYear: new Date().getFullYear()
+        currentYear: new Date().getFullYear(),
     },
     computed: {
         galleryImages() {
@@ -74,5 +74,12 @@ new Vue({
             link.addEventListener('click', this.smoothScroll);
         });
         this.setupScrollAnimation();
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.querySelector('.scroll-progress').style.setProperty('--scroll-width', scrolled + '%');
+        });
     }
 });

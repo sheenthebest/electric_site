@@ -16,91 +16,289 @@
 </head>
 <body>
 
-    <header>
+    <header class="animate-on-scroll fade-in-down delay-1">
         <nav>
-            <div class="logo animate-on-scroll zoom-in delay-2">
+            <a href="#" class="logo">
                 <img src="images/logo.png" alt="Elektro Psota">
-            </div>
-            <ul class="animate-on-scroll zoom-in delay-2">
-                <li><a href="#uvod">Úvod</a></li>
-                <li><a href="#sluzby">Služby</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+            </a>
+    
+            <ul class="nav-list">
+                <li>
+                    <a href="#uvod" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Úvod</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sluzby" class="nav-link">
+                        <i class="fas fa-bolt"></i>
+                        <span>Služby</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">
+                        <i class="fas fa-image"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#kontakt" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kontakt</span>
+                    </a>
+                </li>
             </ul>
-            <div class="contact-phone animate-on-scroll zoom-in delay-2">
-                <i class="fas fa-phone"></i> +420 607 270 005
-            </div>
+    
+            <a href="tel:+420607270005" class="contact-phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>+420 607 270 005</span>
+            </a>
         </nav>
+        <div class="scroll-progress"></div>
     </header>
 
     <div id="app">
         <main>
             <section id="uvod" class="hero">
-                <!-- <div class="hero-image animate-on-scroll zoom-in delay-5">
-                    <img src="images/person.jpg" alt="Martin Psota" class="profile-image">
-                </div> -->
-                <div class="hero-content">
-                    <h1 class="animate-on-scroll fade-in-up delay-1">Martin Psota</h1>
-                    <h2 class="animate-on-scroll fade-in-up delay-2">Elektrikář OSVČ</h2>
-                    <p class="animate-on-scroll fade-in-up delay-3">Profesionální elektrikářské služby s více než 10 lety zkušeností</p>
-                    <div class="hero-features animate-on-scroll fade-in-up delay-4">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Kvalitní práce</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-bolt"></i>
-                            <span>Rychlé řešení</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-user-shield"></i>
-                            <span>Bezpečnost především</span>
-                        </div>
-                    </div>
-                    <div class="cta-buttons">
-                        <a href="#kontakt" class="cta-button animate-on-scroll fade-in-up delay-4">Kontaktujte mě</a>
-                        <a href="#sluzby" class="cta-button cta-secondary animate-on-scroll fade-in-up delay-5">Moje služby</a>
+                <div class="hero-background">
+                    <!-- <div class="hero-gradient"></div> -->
+                    <div class="geometric-elements">
+                        <div class="geo-element line-grid"></div>
+                        <div class="geo-element circle"></div>
+                        <div class="geo-element square"></div>
+                        <div class="geo-element dots"></div>
                     </div>
                 </div>
-                <div class="hero-image animate-on-scroll zoom-in delay-5">
-                    <img src="images/person.jpg" alt="Martin Psota" class="profile-image">
+                
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="animate-on-scroll fade-in-up delay-1">Martin Psota</h1>
+                        <h2 class="animate-on-scroll fade-in-up delay-2">Elektrikář OSVČ</h2>
+                        <p class="animate-on-scroll fade-in-up delay-3">
+                            Profesionální elektrikářské služby s více než 10 lety zkušeností.
+                        </p>
+                        
+                        <div class="hero-features animate-on-scroll fade-in-up delay-4">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>Kvalitní práce</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <span>Rychlé řešení</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <span>Bezpečnost především</span>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-indicator animate-on-scroll fade-in-up delay-4">
+                            <div class="exp-line"></div>
+                            <div class="exp-content">
+                                <span class="exp-number">10+</span>
+                                <span class="exp-text">let v oboru</span>
+                            </div>
+                            <div class="exp-line"></div>
+                        </div>
+                        
+                        <div class="cta-buttons animate-on-scroll fade-in-up delay-5">
+                            <a href="#kontakt" class="cta-button cta-primary">
+                                Kontaktujte mě
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#sluzby" class="cta-button cta-secondary">
+                                Moje služby
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual animate-on-scroll zoom-in delay-4">
+                    <div class="image-container">
+                        <div class="corner-elements">
+                            <span class="corner top-left"></span>
+                            <span class="corner top-right"></span>
+                            <span class="corner bottom-left"></span>
+                            <span class="corner bottom-right"></span>
+                        </div>
+                        
+                        <div class="visual-effect">
+                            <div class="particle particle-1"></div>
+                            <div class="particle particle-2"></div>
+                            <div class="particle particle-3"></div>
+                        </div>
+            
+                        <div class="geometric-overlay">
+                            <div class="circuit-lines">
+                                <div class="line line-1"></div>
+                                <div class="line line-2"></div>
+                                <div class="line line-3"></div>
+                                <div class="dot dot-1"></div>
+                                <div class="dot dot-2"></div>
+                                <div class="dot dot-3"></div>
+                            </div>
+                            <div class="geo-circle"></div>
+                            <div class="geo-square"></div>
+                            <div class="tech-pattern"></div>
+                        </div>
+            
+                        <div class="image-frame">
+                            <div class="frame-border"></div>
+                            <div class="image-wrapper">
+                                <img src="images/person.jpg" alt="Martin Psota" class="profile-image">
+                            </div>
+                            <div class="frame-overlay"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <div id="sluzby" class="section section animate-on-scroll fade-in-up">
-                <h2 class="section-title animate-on-scroll fade-in-down">Moje služby</h2>
-                <div class="services-container animate-on-scroll zoom-in delay-1">
-                    <div class="services-group">
-                        <i class="fas fa-bolt service-icon"></i>
-                        <h3>Elektroinstalace</h3>
-                        <ul>
-                            <li>Silnoproudé a slaboproudé instalace</li>
-                            <li>Staveništní rozvody</li>
-                            <li>Hromosvody a uzemnění</li>
-                        </ul>
+            <section id="sluzby" class="services-section">
+                <div class="section-background">
+                    <div class="background-grid"></div>
+                    <div class="background-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <!-- <div class="shape shape-3"></div> -->
                     </div>
-                    <div class="services-group">
-                        <i class="fas fa-shield-alt service-icon"></i>
-                        <h3>Bezpečnostní systémy</h3>
-                        <ul>
-                            <li>Zabezpečovací systémy Jablotron</li>
-                            <li>Kamerové systémy Hikvision</li>
-                        </ul>
+                </div>
+            
+                <div class="section-header animate-on-scroll fade-in-up">
+                    <h2 class="section-title">Moje služby</h2>
+                    <div class="title-decoration">
+                        <span class="line"></span>
+                        <span class="dot"></span>
+                        <span class="line"></span>
                     </div>
-                    <div class="services-group">
-                        <i class="fas fa-tools service-icon"></i>
-                        <h3>Specializované služby</h3>
-                        <ul>
-                            <li>Řízení a koordinace zakázek</li>
-                            <li>Kompletace a úpravy rozvaděčů</li>
-                            <li>Montáž LED osvětlení a pásků</li>
-                        </ul>
+                    <p class="section-subtitle">Komplexní elektrikářské služby pro váš domov i firmu</p>
+                </div>
+            
+                <div class="services-container">
+                    <div class="service-card animate-on-scroll fade-in-up delay-1">
+                        <div class="card-header">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-plug"></i>
+                                <div class="icon-background"></div>
+                            </div>
+                            <h3>Elektroinstalace</h3>
+                        </div>
+                        
+                        <div class="card-content">
+                            <ul class="services-list">
+                                <li class="service-item">
+                                    <div class="item-bullet"></div>
+                                    <span>Silnoproudé a slaboproudé instalace</span>
+                                </li>
+                                <li class="service-item">
+                                    <div class="item-bullet"></div>
+                                    <span>Staveništní rozvody</span>
+                                </li>
+                                <li class="service-item">
+                                    <div class="item-bullet"></div>
+                                    <span>Hromosvody a uzemnění</span>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="card-decoration">
+                            <div class="corner-element top-left"></div>
+                            <div class="corner-element top-right"></div>
+                            <div class="corner-element bottom-left"></div>
+                            <div class="corner-element bottom-right"></div>
+                        </div>
+                    </div>
+            
+                    <div class="service-card animate-on-scroll fade-in-up delay-2">
+                        <div class="card-header">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="icon-background"></div>
+                            </div>
+                            <h3>Bezpečnostní systémy</h3>
+                        </div>
+                        
+                        <div class="card-content">
+                            <ul class="services-list">
+                                <li class="service-item">
+                                    <div class="item-bullet"></div>
+                                    <span>Zabezpečovací systémy Jablotron</span>
+                                </li>
+                                <li class="service-item">
+                                    <div class="item-bullet"></div>
+                                    <span>Kamerové systémy Hikvision</span>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="card-decoration">
+                            <div class="corner-element top-left"></div>
+                            <div class="corner-element top-right"></div>
+                            <div class="corner-element bottom-left"></div>
+                            <div class="corner-element bottom-right"></div>
+                        </div>
+                    </div>
+
+                    <div class="service-card animate-on-scroll fade-in-up delay-3">
+                        <div class="card-header">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-tools"></i>
+                                <div class="icon-background"></div>
+                            </div>
+                            <h3>Specializované služby</h3>
+                        </div>
+                        
+                        <div class="card-content">
+                            <ul class="services-list">
+                                <li class="service-item">
+                                    <div class="item-bullet"></div>
+                                    <span>Řízení a koordinace zakázek</span>
+                                </li>
+                                <li class="service-item">
+                                    <div class="item-bullet"></div>
+                                    <span>Kompletace a úpravy rozvaděčů</span>
+                                </li>
+                                <li class="service-item">
+                                    <div class="item-bullet"></div>
+                                    <span>Montáž LED osvětlení a pásků</span>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="card-decoration">
+                            <div class="corner-element top-left"></div>
+                            <div class="corner-element top-right"></div>
+                            <div class="corner-element bottom-left"></div>
+                            <div class="corner-element bottom-right"></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section id="portfolio" class="section section animate-on-scroll fade-in-up delay-1">
-                <h2 class="section-title animate-on-scroll fade-in-down">Portfolio</h2>
+                <div class="section-background">
+                    <div class="background-grid"></div>
+                    <div class="background-shapes">
+                        <div class="shape shape-2"></div>
+                    </div>
+                </div>
+            
+                <div class="section-header animate-on-scroll fade-in-up">
+                    <h2 class="section-title">Portfolio</h2>
+                    <div class="title-decoration">
+                        <span class="line"></span>
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="section-subtitle">Ukázky z mé práce a realizovaných projektů</p>
+                </div>
+                
                 <div class="gallery animate-on-scroll zoom-in delay-1">
                     <div v-for="(image, index) in displayedImages" :key="index" class="gallery-item" @click="openGallery(index)">
                         <img :src="image" :alt="'Ukázka práce ' + (index + 1)">
@@ -108,40 +306,114 @@
                 </div>
             </section>
 
-            <section id="kontakt" class="section section animate-on-scroll fade-in-up delay-1">
-                <h2 class="section-title animate-on-scroll fade-in-down">Kontakt</h2>
+            <section id="kontakt" class="contact-section">
+                <div class="section-background">
+                    <div class="background-grid"></div>
+                    <div class="background-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+            
+                <div class="section-header animate-on-scroll fade-in-up">
+                    <h2 class="section-title">Kontakt</h2>
+                    <div class="title-decoration">
+                        <span class="line"></span>
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="section-subtitle">Potřebujete elektrikáře? Neváhejte mě kontaktovat</p>
+                </div>
+            
                 <div class="contact-container">
-                    <div class="contact-info animate-on-scroll fade-in-up delay-1">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <p>info@elektro-psota.cz</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <p>+420 607 270 005</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-id-card"></i>
-                            <p>IČO: 14438836</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="address">
-                                <span>Loket 29</span>
-                                <span>257 65 Čechtice</span>
+                    <div class="contact-card animate-on-scroll fade-in-up delay-1">
+                        <div class="card-content">
+                            <div class="contact-info">
+                                <div class="info-item animate-on-scroll fade-in-up delay-2">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="icon-background"></div>
+                                    </div>
+                                    <div class="info-content">
+                                        <h3>Telefon</h3>
+                                        <a href="tel:+420607270005" class="contact-link">
+                                            +420 607 270 005
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div class="info-item animate-on-scroll fade-in-up delay-3">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="icon-background"></div>
+                                    </div>
+                                    <div class="info-content">
+                                        <h3>Email</h3>
+                                        <a href="mailto:info@elektro-psota.cz" class="contact-link">
+                                            info@elektro-psota.cz
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div class="info-item animate-on-scroll fade-in-up delay-4">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div class="icon-background"></div>
+                                    </div>
+                                    <div class="info-content">
+                                        <h3>Adresa</h3>
+                                        <p class="address">
+                                            Loket 29<br>
+                                            257 65 Čechtice
+                                        </p>
+                                    </div>
+                                </div>
+            
+                                <div class="info-item animate-on-scroll fade-in-up delay-4">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-id-card"></i>
+                                        <div class="icon-background"></div>
+                                    </div>
+                                    <div class="info-content">
+                                        <h3>IČO</h3>
+                                        <p class="business-id">14438836</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="social-links animate-on-scroll fade-in-up delay-5">
+                                <a href="https://cz.linkedin.com/in/martin-psota-296b55204" 
+                                   class="social-link" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
                             </div>
                         </div>
+            
+                        <div class="card-decoration">
+                            <div class="corner-element top-left"></div>
+                            <div class="corner-element top-right"></div>
+                            <div class="corner-element bottom-left"></div>
+                            <div class="corner-element bottom-right"></div>
+                        </div>
                     </div>
-
-                    <div class="social-links animate-on-scroll fade-in-up delay-2">
-                        <a href="https://cz.linkedin.com/in/martin-psota-296b55204" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    </div>
+            
                 </div>
             </section>
 
             <footer class="footer">
-                <div class="container">
-                    <p>&copy; {{ currentYear }} Martin Psota. Všechna práva vyhrazena.</p>
+                <div class="footer-background">
+                    <div class="background-grid"></div>
+                    <div class="background-line"></div>
+                </div>
+                
+                <div class="footer-content">
+                    <p class="copyright animate-on-scroll fade-in-up">
+                        © {{ currentYear }} Martin Psota. Všechna práva vyhrazena.
+                    </p>
                 </div>
             </footer>
         </main>
@@ -152,6 +424,10 @@
                 <button class="gallery-nav prev" @click="prevImage"><i class="fas fa-chevron-left"></i></button>
                 <button class="gallery-nav next" @click="nextImage"><i class="fas fa-chevron-right"></i></button>
                 <button class="gallery-close" @click="closeGallery"><i class="fas fa-times"></i></button>
+            
+                <div class="image-counter">
+                    {{ currentImageIndex + 1 }} / {{ totalImages }}
+                </div>
             </div>
         </div>
     </div>
